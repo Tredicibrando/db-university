@@ -1,0 +1,5 @@
+SELECT `d`.`id`, `d`.`name` AS `degree_name`, `c`.`name` AS `course_name`, `t`.`name`, `t`.`surname`
+FROM `degrees` AS `d`
+JOIN `courses` AS `c` ON `d`.`id` = `c`.`degree_id`
+JOIN `course_teacher` AS `ct` ON `ct`.`course_id` = `c`.`id`
+JOIN `teachers` AS `t` ON `t`.`id` = `ct`.`teacher_id`;

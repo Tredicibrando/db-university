@@ -1,0 +1,4 @@
+SELECT `dep`.`name` AS `department_name`, `deg`.*
+FROM `departments` AS `dep`
+INNER JOIN `degrees` AS `deg` ON `deg`.`department_id` = `dep`.`id`
+WHERE `dep`.`name` = 'Dipartimento di Neuroscienze';

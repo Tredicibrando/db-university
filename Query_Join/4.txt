@@ -1,0 +1,5 @@
+SELECT `s`.id,`s`.`name`,`s`.`surname`, `deg`.`name` AS `degree_name`,`dep`.`name` AS `name`
+FROM `students` AS `s`
+JOIN `degrees` AS `deg` ON `s`.`degree_id` = `deg`.`id`
+JOIN `departments` AS `dep` ON `deg`.`department_id` = `dep`.`id`
+ORDER BY `s`.`surname`, `s`.`name`;

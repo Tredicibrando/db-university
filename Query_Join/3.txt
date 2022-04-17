@@ -1,0 +1,5 @@
+SELECT `t`.`name`, `t`.`surname`,`c`.`name` AS `course_name`
+FROM `teachers` AS `t`
+JOIN `course_teacher` AS `ct` ON `ct`.`teacher_id` = `t`.`id`
+JOIN `courses` AS `c` ON `c`.`id` = `ct`.`course_id`
+WHERE `t`.`id` = 44;
