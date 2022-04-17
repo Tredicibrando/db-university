@@ -1,0 +1,3 @@
+SELECT COUNT (*) AS `tot_corsi_laurea`, `dep_id`
+FROM `degrees`
+GROUP BY `deparment_id`

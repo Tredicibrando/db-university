@@ -1,0 +1,3 @@
+SELECT COUNT(*)
+FROM `teachers`
+GROUP BY `office_address`;
